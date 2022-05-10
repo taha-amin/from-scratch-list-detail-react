@@ -7,7 +7,7 @@ export async function getPokemon(from = 0, to = 30) {
 }
 
 export async function getSinglePokemon(id) {
-  const response = await client.from('pokemons').select().match({ Id }).single();
+  const response = await client.from('pokemons').select().match({ id }).single();
 
   return checkError(response);
 }
