@@ -10,7 +10,6 @@ export default function PokemonDetail() {
   useEffect(() => {
     async function fetch() {
       const pokemonData = await getSinglePokemon(params.id);
-      console.log(pokemon);
 
       setPokemon(pokemonData);
     }
